@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <time.h>
-// #include <stack>
 #include <utility>
 #include <iostream>
 #include <utility>
@@ -179,60 +178,9 @@ class Treap {
         ~Treap() {
             delete_tree_rec(root);
         }
-
-        // void insert(T key) {
-        //     TNode<T> *newNode = new TNode<T>(key);
-        //     if (!root) {
-        //         root = newNode;
-        //         return;
-        //     }
-        //     std::stack<TNode<T>*> path; // Store path
-        //     bst_insert(newNode, path);
-        //     path_rotate(path);
-        // }
-
-        // void bst_insert(TNode<T> *newNode, std::stack<TNode<T>*> &path) {
-        //     TNode<T> *node = root;
-        //     while(node) {
-        //         path.push(node);
-        //         if (newNode->key == node->key) break;
-        //         if (newNode->key > node->key) {
-        //             if (node->right == nullptr) {
-        //                 node->right = newNode;
-        //                 break;
-        //             }
-        //             node = node->right;
-        //         } else {
-        //             if (node->left == nullptr) {
-        //                 node->left = newNode;
-        //                 break;
-        //             }
-        //             node = node->left;
-        //         }
-        //     }
-        // }
-        
-        // void path_rotate(std::stack<TNode<T>*> &path) {
-        //     while(!path.empty()) {
-        //         TNode<T> *node = path.top();
-        //         if (node->left && node->left->priority > node->priority) {
-        //             right_rotate(node);
-        //         }
-        //         if (node->right && node->right->priority > node->priority) {
-        //             left_rotate(node);
-        //         }
-        //         path.pop();
-        //     }
-        // }
 };
 
 int main() {
-    // Treap<int> treap;
-    // treap.insert(10);
-    // treap.insert(15);
-    // treap.insert(5);
-    // treap.insert(20);
-    // treap.insert(25);
     int data[5] {1,2,3,4,5};
     Treap<int> treap(data, 5);
     treap.remove(3);

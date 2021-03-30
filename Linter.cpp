@@ -5,7 +5,7 @@
 #include <unordered_set>
 #include <vector>
 
-// Implements a very basic variable linter
+// Implements a very basic (and very badly programmed) variable linter
 
 std::vector<std::string> datatypes{"int"};
 
@@ -163,8 +163,6 @@ void lint(std::ifstream &file) {
 }
 
 int main() {
-    // "lintertest.cpp"
-    // C:\Users\sants\Google Drive\DSA Exercises\lintertest.cpp
     std::ifstream file = getfile();
     lint(file);
 }

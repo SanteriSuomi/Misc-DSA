@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 
+// Barebones implementation of a string class
 namespace str {
 class string {
    private:

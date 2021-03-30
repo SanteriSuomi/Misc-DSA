@@ -30,9 +30,9 @@ long double calc_entropy(unordered_map<char, long double> map, int length) {
     return ent;
 }
 
-// int main() {
-//     std::string s = "ABBCCCDDDD";
-//     double ent = calc_entropy(s);
-//     std::cout << "Average entropy per symbol of this string is: " << ent << "\n";
-//     std::cout << "Total entropy is: " << ceil(ent) * s.size();
-// }
+int main() {
+    std::string s = "ABBCCCDDDD";
+    double ent = calc_entropy(s);
+    std::cout << "Average entropy per symbol of this string is: " << ent << "\n";
+    std::cout << "Total entropy is: " << ceil(ent) * s.size();
+}

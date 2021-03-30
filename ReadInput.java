@@ -13,7 +13,7 @@ public final class ReadInput {
     public static List<Integer> asInteger(String fileName) {
         List<Integer> data = new ArrayList<>();
         try {
-            File file = new File("C:\\Users\\razor\\Google Drive (sant.suomi@gmail.com)\\DSA Exercises\\" + fileName);
+            File file = new File("path here" + fileName);
             try(Scanner sc = new Scanner(file)) {
                 while (sc.hasNextLine()) {
                     data.add(Integer.parseInt(sc.nextLine()));
@@ -28,7 +28,7 @@ public final class ReadInput {
     public static List<String> asString(String fileName) {
         List<String> data = new ArrayList<>();
         try {
-            File file = new File("C:\\Users\\razor\\Google Drive (sant.suomi@gmail.com)\\DSA Exercises\\" + fileName);
+            File file = new File("path here" + fileName);
             try(Scanner sc = new Scanner(file)) {
                 while (sc.hasNextLine()) {
                     data.add(sc.nextLine());

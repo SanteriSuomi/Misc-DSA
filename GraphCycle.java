@@ -28,7 +28,6 @@ public class GraphCycle {
     }
 }
 
-
 class Edge {
     public int src, dest;
     public Edge(int src, int dest) {

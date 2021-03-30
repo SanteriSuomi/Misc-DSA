@@ -60,27 +60,37 @@ class Hash implements HashFunction {
         }
         return (int)(Math.abs(sum) % n);
     }
+
+    @Override
+    public int hash(String s, int n) {
+        // Override
+        return 0;
+    }
 }
 
 class Hash1 extends Hash {
+    @Override
     public int hash(String s, int n) {
         return 1 + fold(s, n) % n;
     }
 }
 
 class Hash2 extends Hash {
+    @Override
     public int hash(String s, int n) {
         return 5 + (int)Math.pow(fold(s, n), 4) % n;
     }
 }
 
 class Hash3 extends Hash {
+    @Override
     public int hash(String s, int n) {
         return 10 + 3 * fold(s, n) % n;
     }
 }
 
 class Hash4 extends Hash {
+    @Override
     public int hash(String s, int n) {
         return 10 + 6 * (int)Math.pow(fold(s, n), 2.5) % n;
     }

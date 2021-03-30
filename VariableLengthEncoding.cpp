@@ -20,23 +20,6 @@ class VLE {
             { "011", 'D' }, 
             { "101", 'B' }
         };
-
-        // const int CODE_SIZE = 5;
-
-        // void getCodes(std::vector<std::string> &v, std::string s, int i) {
-        //     if (i > CODE_SIZE) return;
-        //     v.push_back(s + '0');
-        //     v.push_back(s + '1');
-        //     getCodes(v, s + '0', i + 1);
-        //     getCodes(v, s + '1', i + 1);
-        // }
-
-        // void generateCodeTable(std::string &data) {
-        //     std::vector<std::string> v;
-        //     std::string s;
-        //     getCodes(v, s, 0);
-        //     std::cout << "0";
-        // }
     public:
         // Return pairs of symbol probabilities of a given string as a priority queue.
         std::priority_queue<std::pair<char, int>> probabilities(std::string &data) {

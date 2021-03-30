@@ -5,6 +5,8 @@
 
 using namespace std;
 
+// Simplified LZ77 algorithm
+
 struct token {
     token(char *s) : symbol(s) {}
     token(int o, int l) : offset(o), length(l) {}
@@ -61,8 +63,6 @@ string* decode(vector<token> *tokens) {
     }
     return out;
 }
-
-// Very simplified LZ77 algorithm
 
 int main() {
     string data = "TOBEORNOTTOBE";

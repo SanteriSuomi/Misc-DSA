@@ -61,31 +61,5 @@ public class Mergesort {
         for (int i = end ; i >= start; i--) { // Put the merged elements back in to the to be final items array
             items.set(i, copy.get(--coI));
         }
-
-        // int leftInd = start; // Left array index
-        // int rightInd = mid + 1; // Right array index
-        // int mergedInd = 0; // Merged array index
-        // boolean leftUsed = false; // Are all values of left array used?
-        // boolean rightUsed = false; // Are all values of right array used?
-        // while(mergedInd < end) {
-        //     leftUsed = leftInd >= mid;
-        //     rightUsed = rightInd >= end;
-        //     if (leftUsed && rightUsed) {
-        //         break;
-        //     } else if (leftUsed) {
-        //         copy.set(mergedInd++, items.get(rightInd++));
-        //     } else if (rightUsed) {
-        //         copy.set(mergedInd++, items.get(leftInd++));
-        //     } else { // Neither are complete used
-        //         if (items.get(leftInd).compareTo(items.get(rightInd)) < 0) {
-        //             copy.set(mergedInd++, items.get(leftInd++));
-        //         } else {
-        //             copy.set(mergedInd++, items.get(rightInd++));
-        //         }
-        //     }
-        // }
-        // for (int i = end; i >= start; i--) {
-        //     items.set(i, copy.get(--mergedInd));
-        // }
     }
 }

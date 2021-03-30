@@ -1,7 +1,7 @@
 /**
  * Self-balancing binary search tree (AVL tree).
  * @author Santeri Suomi
- * Huge thanks (and credits) to https://www.baeldung.com/java-avl-trees and some other sites I might have unfortunately forgot the name of.
+ * Huge thanks (and most credits) to https://www.baeldung.com/java-avl-trees and some other sites I might have unfortunately forgot the name of.
  */
 public class SimpleAVLTree<T extends Comparable<T>> {
     public static void main(String[] args) {
